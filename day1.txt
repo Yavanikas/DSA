@@ -1,0 +1,15 @@
+DAY 1 – SEARCHING & BIG O
+
+n = size of input (array length)
+
+Linear Search:
+- Check elements one by one
+- Worst case checks all elements
+- Time Complexity: O(n)
+
+Binary Search:
+- Works only on sorted array
+- Cuts search space in half each step
+- Time Complexity: O(log n)
+
+Big O talks about worst-case growth, not exact time.
