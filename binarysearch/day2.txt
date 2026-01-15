@@ -1,0 +1,43 @@
+Problem:
+Find first and last position of a target in a sorted array.
+
+Idea:
+Use binary search twice.
+Once biased to the left to find first occurrence.
+Once biased to the right to find last occurrence.
+
+Why binary search works:
+Array is sorted, so half can be discarded each time.
+
+Time Complexity:
+- O(log n) for each search.
+- Total O(log n).
+
+2) Rotated Sorted Array – Number of Rotations
+
+Problem:
+Given a sorted array that has been rotated some number of times,
+find the number of rotations.
+
+Key Observation:
+- The number of rotations is equal to the index of the minimum element.
+- The minimum element is the only place where the sorted order breaks.
+
+Linear Approach:
+- Scan the array from left to right.
+- Find the first index where arr[i] < arr[i-1].
+- That index is the number of rotations.
+- If no such index exists, the array is not rotated.
+
+Time Complexity:
+- O(n)
+
+Binary Search Approach:
+- In a rotated sorted array, at least one half is always sorted.
+- If the array between beg and end is already sorted, beg is the answer.
+- Otherwise, find mid and check if it is smaller than its neighbors.
+- If mid is the minimum element, its index is the number of rotations.
+- Discard the sorted half and continue searching.
+
+Time Complexity:
+- O(log n)
