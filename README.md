@@ -9,6 +9,7 @@ This repository documents my Data Structures & Algorithms journey using Python.
 
 ## Progress
 - Day 1: Binary Search & Big-O Notation
+- Day 2: First position and last position . Rotated array problem
 
 ## Tech Stack
 - Python
